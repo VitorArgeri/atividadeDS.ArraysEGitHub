@@ -1,19 +1,21 @@
-//Método 05: includes().
-//O método includes() verifica se um elemento está presente ou não na array.
+//Método 06: some().
+//O método some(). verifica se pelo menos um elemento presente na array passa em um teste especificado.
 
-//Const: Usado para criar variáveis que não serão reatríbuidas, ou seja, uma variável imutável.
-
-//Defino uma array com os valores 10, 20 e 30.
-const array1 = [10, 20, 30];
-//Verifico se a array possui o elemento "30" utilizando do .includes(30).
-console.log(array1.includes(30));
-//A resposta será "true".
+//Defino uma array com os elementos 1, 2, 3, 4 e 6.
+let array1 = [1, 2, 3, 4];
+//Defino uma variável como a verificação de que se algum elemento dentro da primeira array é maior ou igual a 4
+let array2 = array1.some(array1 => array1 >= 4);
+//Exibo a verificação presente na array2.
+console.log(array2);
+//A reposta será true
 
 //Exibo um espaço em branco para separar os exemplos.
 console.log("");
 
-//Defino uma array com os valores 100, 200 e 300.
-const array2 = [100, 200, 300];
-//Verifico se a array possui o elemento "500" utilizando do .includes(500).
-console.log(array2.includes(500));
-//A resposta será "false".
+//Defino uma array com os elementos 1, 2, 3, 4 e 5.
+let array3 = [1, 2, 3, 4, 5];
+//Defino uma variável com a verificação de que se algum elemento dentro da primeira array é maior ou igual a 6.
+let array4 = array3.some(array3 => array3 >= 6);
+//Exibo a verificação presente na array4.
+console.log(array4);
+//A resposta será false.
