@@ -1,19 +1,19 @@
-//Método 09: filter().
-//Cria uma nova array com todos os elementos que passaram por um determinado teste.
+//Método 10: .map().
+//O método .map() cria uma nova array com os resultados de uma função aplicada sobre cada um dos elementos presentes na array original.
 
-//Define a array com os valores 1, 2, 3, 4 e 5.
-let numeros = [1, 2, 3, 4, 5];
-//Define exibidor como a verificação de quais números atendem a condição.
-let exibidor = numeros.filter(numeros => numeros >= 3);
-//Exibe o exibidor,
+//Define uma array com os valores 1, 4, 9, 16 e 25.
+let numeros = [1, 4, 9, 16, 25];
+//Define "exibidor" como o resultado da função nos elementos presentes na array "numeros"
+let exibidor = numeros.map(numeros => numeros * 2);
+//Exibe o exibidor.
 console.log(exibidor);
 
 //Exibe um espaço em branco para separar os dois exemplos.
 console.log("");
 
-//Define uma array coms os valores 10, 20, 30, 40 e 50.
-let numeros2 = [10, 20, 30, 40, 50];
-//Define exibidor2 como a verificação de quais números atendem a condição.
-let exibidor2 = numeros2.filter(numeros2 => numeros2 <= 11);
+//Define uma array com os elementos 6, 7, 8, 9 e 10.
+let numeros2 = [6, 7, 8, 9, 10];
+//Define "exibidor2" como o resultado da função nos elementos presentes na array "numeros2"
+let exibidor2 = numeros2.map(numeros2 => numeros2 * numeros2);
 //Exibe o exibidor2.
 console.log(exibidor2);
