@@ -1,19 +1,39 @@
-//Método 10: .map().
-//O método .map() cria uma nova array com os resultados de uma função aplicada sobre cada um dos elementos presentes na array original.
+//Método 11: .splice().
+//.splice() é um método que permite você adicionar, remover ou substituir elementos em um array.
 
-//Define uma array com os valores 1, 4, 9, 16 e 25.
-let numeros = [1, 4, 9, 16, 25];
-//Define "exibidor" como o resultado da função nos elementos presentes na array "numeros"
-let exibidor = numeros.map(numeros => numeros * 2);
-//Exibe o exibidor.
-console.log(exibidor);
+//Defino a array com as strings 'a', 'b' e 'c'.
+let array = ['a', 'b', 'c'];
+//Exibo array.
+console.log(array);
 
-//Exibe um espaço em branco para separar os dois exemplos.
+//Exibo um espaço em branco para separar os exemplos.
 console.log("");
 
-//Define uma array com os elementos 6, 7, 8, 9 e 10.
-let numeros2 = [6, 7, 8, 9, 10];
-//Define "exibidor2" como o resultado da função nos elementos presentes na array "numeros2"
-let exibidor2 = numeros2.map(numeros2 => numeros2 * numeros2);
-//Exibe o exibidor2.
-console.log(exibidor2);
+//Utilizamos o método .splice() para adicionar um elemento.
+//Primeiramente dito que quero adiciona-lo na posição 1.
+//Segundamente dito que não quero remover nenhum elemento.
+//Terceiramente indico quais elementos quero adicionar.
+array.splice(1, 0, 'x', 'y');
+//Exibo o array depois da mudança.
+console.log(array); 
+
+//Exibo um espaço em branco para separar os exemplos.
+console.log("");
+
+//Utilizamos o método .splice() para substituir um elemento.
+//Primeiramente dito que quero começar pela posição 2 do array.
+//Segundamente falo que quero remover 2 elementos.
+//Terceiramente dito o que quero adicionar.
+array.splice(1, 2, 'q');
+//Exibo o array depois da mudança.
+console.log(array);
+
+//Exibo um espaço em branco para separar os exemplos.
+console.log("");
+
+//Utilizamos o método .splice() para remover os elementos.
+//Primeiramente indico que quero começar pela posição 1.
+//Segundamente indico quantos elementos quero remover.
+array.splice(1, 1);
+//Exibo o array depois da mudança.
+console.log(array);
