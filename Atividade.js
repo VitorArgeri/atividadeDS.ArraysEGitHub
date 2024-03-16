@@ -1,21 +1,19 @@
-//Método 06: some().
-//O método some(). verifica se pelo menos um elemento presente na array passa em um teste especificado.
+//Método 07: Array.from().
+//O método Array.from() cria uma nova array à partir de um objeto semelhante a uma array ou iterável.
 
-//Defino uma array com os elementos 1, 2, 3, 4 e 6.
-let array1 = [1, 2, 3, 4];
-//Defino uma variável como a verificação de que se algum elemento dentro da primeira array é maior ou igual a 4
-let array2 = array1.some(array1 => array1 >= 4);
-//Exibo a verificação presente na array2.
-console.log(array2);
-//A reposta será true
+//Defino uma varíavel com a string 'Thiago'.
+let objeto = 'Thiago';
+//Defino uma variável chamada exibidor com o método Array.from(objeto), de forma que eu crie uma array.
+let exibidor = Array.from(objeto);
+//Exibe a array.
+console.log(exibidor);
 
 //Exibo um espaço em branco para separar os exemplos.
 console.log("");
 
-//Defino uma array com os elementos 1, 2, 3, 4 e 5.
-let array3 = [1, 2, 3, 4, 5];
-//Defino uma variável com a verificação de que se algum elemento dentro da primeira array é maior ou igual a 6.
-let array4 = array3.some(array3 => array3 >= 6);
-//Exibo a verificação presente na array4.
-console.log(array4);
-//A resposta será false.
+//Defino uma varíavel com a string 'Vitor'
+let objeto2 = 'Vitor';
+//Defino uma variável chamada exibidor2 com o método Array.from(objeto), de forma que eu crie uma array.
+let exibidor2 = Array.from(objeto2);
+//Exibo a array
+console.log(exibidor2);
