@@ -1,19 +1,21 @@
-//Método 07: Array.from().
-//O método Array.from() cria uma nova array à partir de um objeto semelhante a uma array ou iterável.
+//Método 08: .every().
+//Verifica se todos os elementos presentes em uma array passam por uma determinada condição.
 
-//Defino uma varíavel com a string 'Thiago'.
-let objeto = 'Thiago';
-//Defino uma variável chamada exibidor com o método Array.from(objeto), de forma que eu crie uma array.
-let exibidor = Array.from(objeto);
-//Exibe a array.
-console.log(exibidor);
+//Defino uma array com os valores 18, 20, 25, 30, 55.
+let idade = [18, 20, 25, 30, 55];
+//Defino a variável verificação como a vericação de que se todos os elementos presentes na array são maiores ou iguais à 18.
+let verificação = idade.every(idade => idade >= 18);
+//Exibo a variável verificação.
+console.log(verificação);
+//A resposta será true.
 
 //Exibo um espaço em branco para separar os exemplos.
 console.log("");
 
-//Defino uma varíavel com a string 'Vitor'
-let objeto2 = 'Vitor';
-//Defino uma variável chamada exibidor2 com o método Array.from(objeto), de forma que eu crie uma array.
-let exibidor2 = Array.from(objeto2);
-//Exibo a array
-console.log(exibidor2);
+//Defino uma array com os valores 40, 7, 8, 57, 3.
+let mnidade = [2, 3, 4, 5, 18];
+//Defino uma variável verificação2 omo a verifcação de que todos elementos presentes na array são menores do que 18.
+let verificação2 = mnidade.every(mnidade => mnidade < 18);
+//Exibo a variável verificação2.
+console.log(verificação2);
+//A resposta será false.
